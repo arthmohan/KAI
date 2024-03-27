@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #F0D6D9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.menus {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menuHome,
+.menuTest,
+.menuAbout,
+.menuContact,
+.dropdown {
+    padding: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transition: 0.25s;
+}
+
+.dropdown, #dropHome, #dropTest, #dropAbout, #dropContact{
+    position: relative;
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .menuContact {
+        display: none;
+    }
+    .dropdown, #dropContact{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .menuAbout {
+        display: none;
+    }
+    .dropdown, #dropAbout{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .menuHome, .menuTest {
+        display: none;
+    }
+    .dropdown, #dropHome, #dropTest{
+        display: block;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F0D6D9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+form{
+    padding: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.checkbox{
+    padding: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+#checkboxes1{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 20px;
+}
+
+label:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+    transition-behavior: smooth;
+}
+
+.submitBut{
+    padding: 20px;
+    width: 100%; /* Set width to 100% */
+}
+
+#submitButton{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #F0D6D9;
+    border: 1px solid #f5f5f5;
+    border-radius: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+#submitButton:hover{
+    background-color: #f5f5f5;
+    transition: 0.2s;
+    transition-behavior: smooth;
+}
+
+#checkboxes2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+#checkboxes3{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+
+}
+
+#checkboxes4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #checkboxes1 {
+        grid-template-columns: auto auto;
+    }
+
+    #checkboxes2 {
+        grid-template-columns: auto auto;
+    }
+
+    #checkboxes3{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #checkboxes1 {
+        grid-template-columns: auto;
+    }
+
+    #checkboxes2 {
+        grid-template-columns: auto;
+    }
+
+    #checkboxes3{
+        grid-template-columns: auto;
+    }
+
+    #checkboxes4{
+        grid-template-columns: auto;
+    }
+}
+
+
+

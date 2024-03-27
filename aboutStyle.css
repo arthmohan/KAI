@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F0D6D9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.menus {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menuHome,
+.menuTest,
+.menuAbout,
+.menuContact,
+.dropdown {
+    padding: 15px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transition: 0.25s;
+}
+
+.dropdown, #dropHome, #dropTest, #dropAbout, #dropContact{
+    position: relative;
+    display: none;
+}
+
+@media screen and (max-width: 980px) {
+    .menuContact {
+        display: none;
+    }
+    .dropdown, #dropContact{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .menuAbout {
+        display: none;
+    }
+    .dropdown, #dropAbout{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .menuHome, .menuTest {
+        display: none;
+    }
+    .dropdown, #dropHome, #dropTest{
+        display: block;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F0D6D9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
