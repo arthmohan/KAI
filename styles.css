@@ -133,10 +133,6 @@ a:hover {
     height: 100%; /* Ensure boxes take full height of their row */
 }
 
-.box:hover {
-    transform: scale(1.02);
-    transition: 1s;
-}
 
 .heading, .content {
     padding: 20px;
