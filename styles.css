@@ -133,6 +133,11 @@ a:hover {
     height: 100%; /* Ensure boxes take full height of their row */
 }
 
+.box:hover {
+    transform: scale(1.02);
+    transition: 1s;
+}
+
 .heading, .content {
     padding: 20px;
     flex-grow: 1;
@@ -157,7 +162,7 @@ a:hover {
 }
 
 #sB:hover{
-    cursor: grab;
-    border: 2.5px solid black;
+    cursor: pointer;
     transition: 1s;
+    background-color: #F5F5F5;
 }

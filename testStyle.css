@@ -147,8 +147,10 @@ label:hover{
 }
 
 #submitButton:hover{
+    cursor: pointer;
+    transform: scale(1.02);
     background-color: #f5f5f5;
-    transition: 0.2s;
+    transition: 0.5s;
     transition-behavior: smooth;
 }
 
