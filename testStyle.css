@@ -110,11 +110,12 @@ form{
     padding-left: 60px;
 }
 
-.checkbox{
+.checkbox {
     padding: 10px;
     border: 1px solid #f5f5f5;
     border-radius: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    background-color: #F0D6D9; /* Adjust background color for unchecked state */
 }
 
 #checkboxes1{
@@ -203,4 +204,18 @@ label:hover{
     #checkboxes4{
         grid-template-columns: auto;
     }
+}
+
+.checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+.checkbox:hover{
+    background-color: hsla(0, 0%, 96%, 0.432);
+}
+
+.chk:checked + .checkbox {
+    background-color: #f5f5f5; /* Background color when checked */
 }
