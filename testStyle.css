@@ -115,7 +115,6 @@ form{
     border: 1px solid #f5f5f5;
     border-radius: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-    background-color: #F0D6D9; /* Adjust background color for unchecked state */
 }
 
 #checkboxes1{
@@ -216,6 +215,16 @@ label:hover{
     background-color: hsla(0, 0%, 96%, 0.432);
 }
 
-.chk:checked + .checkbox {
-    background-color: #f5f5f5; /* Background color when checked */
-}
+.checkbox input[type="checkbox"]:checked {
+    background-color: #f5f5f5;
+  }
+  
+  /* Add another class to the checkbox label (assuming you have control over the HTML) */
+  .checkbox.checked {
+    background-color: #f5f5f56e; /* Optional: Change hover color if needed */
+  }
+  
+  /* Target the label with the added class  */
+  .checkbox.checked label {
+    background-color: #f5f5f5; /* This should ensure background color change  */
+  }  
