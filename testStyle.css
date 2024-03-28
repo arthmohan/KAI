@@ -227,4 +227,6 @@ label:hover{
   /* Target the label with the added class  */
   .checkbox.checked label {
     background-color: #f5f5f5; /* This should ensure background color change  */
-  }  
+  }
+
+  
