@@ -126,17 +126,11 @@
             }
         }
         
-        //   function toggleCheckboxBackground(checkbox) {
-        //     checkbox.parentNode.classList.toggle("checked", checkbox.checked);
-        //   }
         function toggleCheckboxBackground() {
-          // Get the checked state of the checkbox
           const isChecked = event.target.checked;
   
-          // Find the closest parent div with the class "checkbox" and change its background color based on the checked state
           const parentDiv = event.target.closest(".checkbox");
           if (parentDiv) {
-            // Ensure parentDiv is found
             if (isChecked) {
               parentDiv.style.backgroundColor = "#f5f5f5"; // Change to desired background color when checked
             } else {
