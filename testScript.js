@@ -5,3 +5,10 @@ checkboxes.forEach((checkbox) => {
     toggleCheckboxBackground();
   });
 });
+
+let radios= document.querySelectorAll(".radio");
+radios.forEach((radio) => {
+  radio.addEventListener("change", function () {
+    toggleRadioBackground();
+  });
+});

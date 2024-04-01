@@ -118,11 +118,24 @@ form{
     transition: background-color 0.2s;
 }
 
-#checkboxes1{
+.radio input[type="radio"] {
+    display: none;
+}
+
+.radio{
+    padding: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+#radios1{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     gap: 20px;
 }
+
 
 label:hover{
     cursor: pointer;
@@ -175,7 +188,7 @@ label:hover{
 }
 
 @media only screen and (max-width: 768px) {
-    #checkboxes1 {
+    #radios1 {
         grid-template-columns: auto auto;
     }
 
@@ -189,7 +202,7 @@ label:hover{
 }
 
 @media only screen and (max-width: 480px) {
-    #checkboxes1 {
+    #radios1 {
         grid-template-columns: auto;
     }
 
@@ -220,3 +233,8 @@ label:hover{
 .checkbox input[type="checkbox"]:checked + label {
     background-color: #f5f5f5;
 }
+
+.radio:hover{
+    background-color: hsla(0, 0%, 96%, 0.432);
+}
+

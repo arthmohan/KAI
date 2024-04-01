@@ -31,19 +31,14 @@
     <br>
 
     <form action="">
-        <h3>Select Skin Type</h3>
-        <div class="ST_selector" id="checkboxes1">
-            <label for="dry"><div class="dryCheck checkbox"><input class="chk" type="checkbox" name="ST_dry" id="dry">Dry</div></label>
-
-            <label for="combination"><div class="combinationCheck checkbox"><input class="chk" type="checkbox" name="ST_combination" id="combination">Combination</div></label>
-
-            <label for="normal"><div class="normalCheck checkbox"><input class="chk" type="checkbox" name="ST_normal" id="normal">Normal</div></label>
-
-            <label for="oily"><div class="oilyCheck checkbox"><input class="chk" type="checkbox" name="ST_oily" id="oily">Oily</div></label>
-
-            <label for="acne"><div class="acneCheck checkbox"><input class="chk" type="checkbox" name="ST_acne" id="acne">Acne Prone</div></label>
-
-            <label for="sensitive"><div class="sensitiveCheck checkbox"><input class="chk" type="checkbox" name="ST_sensitive" id="sensitive">Sensitive</div></label>
+        <h3>Select Skin Type (Select one)</h3>
+        <div class="ST_selector" id="radios1">
+            <label><div class="dryCheck radio"><input class="chk" type="radio" name="ST_type" value="dry">Dry</div></label>
+            <label><div class="combinationCheck radio"><input class="chk" type="radio" name="ST_type" value="combination">Combination</div></label>
+            <label><div class="normalCheck radio"><input class="chk" type="radio" name="ST_type" value="normal">Normal</div></label>
+            <label><div class="oilyCheck radio"><input class="chk" type="radio" name="ST_type" value="oily">Oily</div></label>
+            <label><div class="acneCheck radio"><input class="chk" type="radio" name="ST_type" value="acne">Acne Prone</div></label>
+            <label><div class="sensitiveCheck radio"><input class="chk" type="radio" name="ST_type" value="sensitive">Sensitive</div></label>
         </div>
 
         <br><br>
@@ -117,6 +112,20 @@
     </form>
 
     <script>
+
+        function toggleRadioBackground() {
+            const isChecked = event.target.checked;
+
+            const parentDiv1 = event.target.closest(".radio");
+            if (parentDiv1) {
+                if (isChecked) {
+                    parentDiv1.style.backgroundColor = "#f5f5f5";
+                } else {
+                    parentDiv1.style.backgroundColor = "";
+                }
+            }
+        }
+        
         //   function toggleCheckboxBackground(checkbox) {
         //     checkbox.parentNode.classList.toggle("checked", checkbox.checked);
         //   }
