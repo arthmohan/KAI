@@ -212,10 +212,11 @@ label:hover{
     -moz-appearance: none;
     -ms-appearance: none;
 }
+
 .checkbox:hover{
     background-color: hsla(0, 0%, 96%, 0.432);
 }
 
-input[type="checkbox"]:checked + label {
+.checkbox input[type="checkbox"]:checked + label {
     background-color: #f5f5f5;
 }
