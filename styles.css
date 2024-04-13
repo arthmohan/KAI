@@ -22,7 +22,7 @@ body {
 
 .logo1{
     font-family: "Dream Avenue";
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .menus {
@@ -111,7 +111,19 @@ a:hover {
     display: block;
 }
 
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#hero {
+    width: calc(100% - 40px);
+    margin: 20px;
+    border-radius: 10px;
+    max-height: 20em;
+    object-fit: cover;
+}
 
 .spacer{
     padding: 200px;
