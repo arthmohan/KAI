@@ -5,9 +5,10 @@ function handleSubmit(event) {
     // Arrays to store results
     let skinTypeResults = [];
     let skinConcernsResults = [];
-    let allergensResults = [];
     let priceRangeResults = [];
     
+
+
     // Get selected skin type
     let selectedSkinType = document.querySelector('input[name="ST_type"]:checked');
     if (selectedSkinType) {
@@ -20,11 +21,6 @@ function handleSubmit(event) {
         skinConcernsResults.push(checkbox.value);
     });
     
-    // Get selected allergens
-    let selectedAllergens = document.querySelectorAll('input[name^="A_"]:checked');
-    selectedAllergens.forEach((checkbox) => {
-        allergensResults.push(checkbox.value);
-    });
     
     // Get selected price range
     let selectedPriceRange = document.querySelectorAll('input[name^="PR_"]:checked');
@@ -35,7 +31,6 @@ function handleSubmit(event) {
     // You can do whatever you want with these arrays, like sending them to a server or processing them further
     console.log("Skin Type Results:", skinTypeResults);
     console.log("Skin Concerns Results:", skinConcernsResults);
-    console.log("Allergens Results:", allergensResults);
     console.log("Price Range Results:", priceRangeResults);
 }
 
@@ -46,3 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", handleSubmit);
     }
 });
+
+
