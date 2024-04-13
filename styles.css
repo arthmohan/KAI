@@ -8,7 +8,7 @@ body {
 
 @font-face {
     font-family: myFirstFont;
-    src:local("/Users/arthmohan/Documents/WebDev/kai/fonts/FontsFree-Net-Dream-Avenue.ttf");
+    src:local("/fonts/FontsFree-Net-Dream-Avenue.ttf");
 }
 
 .navbar {
