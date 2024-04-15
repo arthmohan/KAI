@@ -2,7 +2,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #F0D6D9;
+    background-color: #e2ddd3;
+
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src:local("/fonts/FontsFree-Net-Dream-Avenue.ttf");
 }
 
 .navbar {
@@ -12,8 +19,9 @@ body {
     padding: 20px;
 }
 
-.logo {
-    font-size: 30px;
+.logo1{
+    font-family: "Dream Avenue";
+    font-size: 80px;
 }
 
 .menus {
@@ -36,7 +44,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #565257;
     transition: 0.25s;
 }
 
@@ -76,7 +84,7 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #F0D6D9;
+    background-color: #e2ddd3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -94,10 +102,22 @@ a:hover {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 5em;
+    font-size: 20px;
+}
+

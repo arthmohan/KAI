@@ -31,21 +31,21 @@
     <br>
     <div class="formsty">
 
-        <form class="formsty" action="">
+        <form class="formsty" action="" onsubmit="handleSubmit(event)" method="post">
         <h3>Select Skin Type (Select one)</h3>
         <div class="ST_selector" id="radios1">
             <label><div class="dryCheck radio"><input class="chk" type="radio" name="ST_type" value="dry">Dry</div></label>
             <label><div class="combinationCheck radio"><input class="chk" type="radio" name="ST_type" value="combination">Combination</div></label>
             <label><div class="normalCheck radio"><input class="chk" type="radio" name="ST_type" value="normal">Normal</div></label>
             <label><div class="oilyCheck radio"><input class="chk" type="radio" name="ST_type" value="oily">Oily</div></label>
-            <label><div class="acneCheck radio"><input class="chk" type="radio" name="ST_type" value="acne">Acne Prone</div></label>
+            <label><div class="acneCheck radio"><input class="chk" type="radio" name="ST_type" value="acneprone">Acne Prone</div></label>
             <label><div class="sensitiveCheck radio"><input class="chk" type="radio" name="ST_type" value="sensitive">Sensitive</div></label>
         </div>
 
         <br><br>
 
         <h3>Select Skin Concerns</h3>
-        <div class="SC_selector" id="checkboxes2">
+        <div class="selector" id="checkboxes2">
             <label for="aging"><div class="agingCheck checkbox"><input class="chk" type="checkbox" value="aging" name="SC_aging" id="aging">Aging</div></label>
 
             <label for="dullness"><div class="dullnessCheck checkbox"><input class="chk" value="dullness" type="checkbox" name="SC_dullness" id="dullness">Dullness</div></label>
@@ -96,7 +96,7 @@
         <br><br>
 
         <div class="sumbitBut">
-            <button type="submit" id="submitButton">Get Results</button>
+            <button type="submit" id="submitButton" onclick="window.location.href = 'http://localhost:3001';">Get Results</button>
         </div>
         
         </form>
@@ -110,7 +110,7 @@
             const parentDiv1 = event.target.closest(".radio");
             if (parentDiv1) {
                 if (isChecked) {
-                    parentDiv1.style.backgroundColor = "#f5f5f5";
+                    parentDiv1.style.backgroundColor = "#e2ddd3";
                 } else {
                     parentDiv1.style.backgroundColor = "";
                 }
@@ -123,7 +123,7 @@
           const parentDiv = event.target.closest(".checkbox");
           if (parentDiv) {
             if (isChecked) {
-              parentDiv.style.backgroundColor = "#f5f5f5"; // Change to desired background color when checked
+              parentDiv.style.backgroundColor = "#e2ddd3"; // Change to desired background color when checked
             } else {
               parentDiv.style.backgroundColor = ""; // Reset to default background color when unchecked
             }

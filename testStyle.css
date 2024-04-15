@@ -110,7 +110,7 @@ a:hover {
 }
 
 .formsty{
-    background-color: #f7e9f0;
+    background-color: #ffffff;
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 20px;
@@ -125,7 +125,7 @@ form{
 
 .checkbox {
     padding: 10px;
-    border: 1px solid #f5f5f5;
+    border: none;
     border-radius: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
     transition: background-color 0.2s;
@@ -168,7 +168,7 @@ label:hover{
     font-size: 16px;
     padding: 10px;
     background-color: #e2ddd3;
-    border: 1px solid #e2ddd3;
+    border: none;
     border-radius: 30px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
 }
